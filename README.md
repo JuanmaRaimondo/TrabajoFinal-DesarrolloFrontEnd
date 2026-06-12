@@ -1,16 +1,25 @@
-# React + Vite
+Trabajo Final Desarrollo FrontEnd
+Requisitos:
+● Crear una aplicación React.
+● Tiene que llevar a cabo un CRUD usando Ajax.
+● Tiene que llamar al menos un Framework de CSS (Bootstrap, Bulma, Tailwind, etc).
+● Se tiene que dar la comunicación entre componentes padre-hijo.
+● Usar hooks y componentes funcionales.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Esta aplicación web me permitirá cargar los productos para un futuro control de stock de mi almacén.
+Requisitos de la interfaz:
+● La Aplicación deberá contener un Formulario y una Tabla.
+● El formulario deberá contener:
+○ Un combo con opciones con el título Categoría. Ejemplos de elementos listados en el combo: Limpieza, Comestibles, Descartables, Bebidas, etc.
+○ Un input de tipo text con el título Producto, donde se cargaría el producto comprado
+○ Un input para ingresar la cantidad
+○ Un input para el precio unitario $
+○ Un botón “Agregar”, el cual debería poseer la lógica para agregar un registro en la Tabla
+● La tabla deberá contener:
+○ Una columna con la fecha
+○ Una columna con la categoría
+○ Una columna con el producto
+○ Una columna con el precio unitario
+○ Una columna con el cantidad
+○ Una columna con el total (precio unitario * cantidad)
+○ Una columna con Acciones: un botón para Editar y un botón para Eliminar un registro. Al hacer click en el botón Editar este deberá completar el Formulario con los datos del registro seleccionado para permitir la edición, y el botón antes llamado Agregar pasará a decir Aceptar.
