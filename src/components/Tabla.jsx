@@ -1,6 +1,9 @@
 
 function Tabla(){
 
+  export const TablaProd = ({productos, eliminarProducto, editarProducto}) => {
+
+  }
   return (
     <div class="table-container"> 
       <table class="table is-striped is-hoverable is-fullwidth">
@@ -16,14 +19,17 @@ function Tabla(){
         </thead>
         <tbody>
         <tr>
-          <td>nombre producto</td>
-          <td>categoria</td>
-          <td>cantidad</td>
-          <td>precio unitario</td>
-          <td>total</td>
+          <td>{producto.nombre}</td>
+          <td>{producto.categoria}</td>
+          <td>{producto.cantidad}</td>
+          <td>{producto.preciounitario}</td>
+          <td>{producto.preciounitario * productos.cantidad}</td>
           <td><div class="buttons">
-              <button class="button is-info is-small">Editar</button>
-              <button class="button is-danger is-small">Borrar</button>
+              <button class="button is-info is-small" onClick={()=>{
+                editarProducto(producto)
+              }} >Editar</button>
+              <button class="button is-danger is-small onClick={()=>{
+              eliminarProducto(producto.id)}} ">Borrar</button>
               </div>
           </td>
         </tr>
