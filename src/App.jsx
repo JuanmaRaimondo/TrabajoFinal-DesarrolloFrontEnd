@@ -3,14 +3,17 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Tabla from './components/Tabla';
 
+
 function App() {
    const [productos, setProductos] = useState([]); 
 
    useEffect(()=>{
-    fetch('http://localhost:5173/')
+    fetch('db.json')
               .then((response) => response.json())
-              .then((data) => setProductos(data))
+              .then((data) => setProductos(data.productos))
+              .catch((error) => console.error("Error en la API:", error));
    },[])
+   
   return (
     <div className="section">
       <div className="container">

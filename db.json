@@ -1,6 +1,6 @@
 {
   "productos": [
-    { "id": "1", "producto": "Leche Entera", "categoria": "Bebidas", "cantidad": 5, "precio": 1200 },
-    { "id": "2", "producto": "Detergente", "categoria": "Limpieza", "cantidad": 2, "precio": 1800 }
+    { "id": "1", "producto": "Leche Entera", "categoria": "Bebidas", "cantidad": 5, "preciounitario": 1200, "fecha": "2026-06-15" },
+    { "id": "2", "producto": "Detergente", "categoria": "Limpieza", "cantidad": 2, "preciounitario": 1800, "fecha": "2026-06-15" }
   ]
 }
